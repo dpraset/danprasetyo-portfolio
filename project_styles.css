@@ -1,0 +1,120 @@
+.list_heading {
+	font-family: Arial, Helvatica, sans-serif;
+	font-size: large;
+	font-style: italic;
+	font-weight: bold;
+	color: #333;
+}
+
+.paragraph_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.paragraph_text2 {
+	font-family:'Montserrat', sans-serif;
+	font-size: 24px;
+}
+
+.smallerparagraph_text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+}
+
+   .dropbtn {
+        /*background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;*/
+        display: block;
+        float: left;
+        color: #FFF;
+        background-color: #376FB9;
+        text-decoration: none;
+        text-align: center;
+        font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        width: 190px;
+        height: 25px;
+    }
+
+    .dropMenu {
+        display: block;
+        float: left;
+        color: #FFF;
+        background-color: #376FB9;
+        text-decoration: none;
+        text-align: center;
+        font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        width: 190px;
+        height: 25px;
+    }
+        .dropMenu:hover {
+            color: #FFF;
+            background-color: #7CAFEC;
+        }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        color: #FFF;
+        background-color: #376FB9;
+        text-decoration: none;
+        text-align: center;
+        font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        /*background-color: #f1f1f1;*/
+        /*min-width: 160px;*/
+        width: 190px;
+        /*height: 25px;*/
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+    .dropdown-content a:hover {
+        color: #FFF;
+        background-color: #7CAFEC;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	display: grid;
+	position: static;
+
+}
+
+    .dropdown:hover .dropbtn {
+        color: #FFF;
+        background-color: #376FB9;
+    }
+
+.page_heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.page_header {
+	font-size: 32px;
+
+}
+
+.image {
+    width: 300px;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 20px;
+ }
+

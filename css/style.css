@@ -231,6 +231,8 @@ button {
 
 .header_section {
     width: 100%;
+    overflow: hidden;
+    padding:6%;
     float: left;
     position: relative;
     z-index: 1;

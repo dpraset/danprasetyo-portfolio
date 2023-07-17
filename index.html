@@ -1,46 +1,256 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Home - Daniel's Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
-<link href="project_styles.css" rel="stylesheet" type="text/css" />
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-    div {
-        padding-right: 780px;
-        padding-left: 60px;
-    }
-</style>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Home Page - Daniel's Portfolio</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="Daniel">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
 </head>
 
 <body>
-    <img src="assets/winterlakebanner.jpg" width="1140" height="139" alt=""/>
-<nav>
-    <!-- Navigation bar for all tabs-->
-    <a href="index.html" class="dropMenu"><b>Home</b></a>
-    <a href="about.html" class="dropMenu">About</a>
-    <a href="https://drive.google.com/file/d/1CSYhFWJLw7cXQRjf4luie6vA1yEfwjoK/view?usp=sharing" target="_blank" class="dropMenu">Resumé</a>
-    <a href="https://www.linkedin.com/in/danielpras/" target="_blank" class="dropMenu">Linkedin</a>
-</nav> 	
+   <!-- header section start -->
+   <div class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
 
-<br /> <br />
-    <!-- Applied Computing and Informatics should be grey colored bolded, not blue hyperlink-->
-<div class="paragraph_text2"><h1>Hi, I'm Daniel!</h1></div>
- <div class="paragraph_text2">I’m a graduate from the <b>University of Washington - Bothell</b>, majoring in 
-    <b><a href="https://www.uwb.edu/stem/undergraduate/majors/applied-computing" target="_blank">Applied Computing</a></b>, and a second discipline in
-    <b><a href="https://ischool.uw.edu/programs/informatics/minor" target="_blank">Informatics</a></b>
-    at the <b>University of Washington - Seattle</b>.
-</div>
-<br>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
 
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">Projects</a>
+                  </li>
 
-<a href=" https://github.com/dpraset" target="_blank">
-    <img src="assets/githublogo.jpg" alt="https://github.com/dpraset" class="image"/> 
-</a>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">Resume</a>
+                  </li>
 
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">LinkedIn</a>
+                  </li>
+                  
+               </ul>
+               
+            </div>
+      </nav>
+   </div>
+   <!-- header section end -->
 
+   <!-- about section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-8">
+               <h2 class="about_taital">Hi, I'm Daniel!</h2>
+               <p class="about_text">This is a capstone project analyzing transit data and visualizing it can involve
+                  gathering
+                  and processing data from various sources, such as transit authorities or third-party providers.
+               </p>
+               <div class="readmore_bt"><a href="about.html">Read more</a></div>
+            </div>
+            <div class="col-sm-4">
+               <div class="about_img"><img src="images/busicon.png"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section end -->
+
+   <!-- purpose section start -->
+   <div class="purpose_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="purpose_taital">Purpose of this Web App</h1>
+               <p class="purpose_text">The purpose of this web app is to provide users with comprehensive analyses of
+                  public transit routes and efficient planning tools, including the visualization of graphs depicting
+                  multiple different routes. By utilizing the GTFS-to-HTML tool and incorporating data visualization
+                  capabilities, the web app offers users valuable insights into transit routes and facilitates informed
+                  decision-making.
+                  <br> <br>
+                  
+                  Overall, the web app serves as a comprehensive platform that combines route information, efficient
+                  trip planning tools, and graphical representations of multiple transit routes. By utilizing the
+                  GTFS-to-HTML tool and incorporating data visualization, it empowers users to access detailed route
+                  information, plan their trips efficiently, and make informed decisions based on visualized comparisons
+                  of different routes.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- purpose section end -->
+
+   <!-- creator section start -->
+   <div class="creator_section layout_padding margin_top_90">
+      <div class="container">
+         <h1 class="creator_taital">Who We Are</h1>
+         <div class="creator_taital_main">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="creator_left">
+                        <div class="member_img"><img src="images/danface.PNG"></div>
+                     </div>
+                     <div class="creator_right">
+                        <h3 class="member_name_text">Daniel Prasetyo</h3>
+                        <p class="member_text">Applied Computing Major at the UW Bothell. Minor in Informatics. 
+                           Designer of front-end UI display, route data analysis, and route search and filter features
+                           of this project. 
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="creator_left">
+                        <div class="member_img"><img src="images/linkedinprofilepic.jpg"></div>
+                     </div>
+                     <div class="creator_right">
+                        <h3 class="member_name_text">Jesus</h3>
+                        <p class="member_text">Applied Computing Major at the UW Bothell. Designer of the machine
+                           learning aspect of this project. Interested in many different subjects relating to computer
+                           science.</p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="creator_left">
+                        <div class="member_img"><img src="images/placeholderprofile.png"></div>
+                     </div>
+                     <div class="creator_right">
+                        <h3 class="member_name_text">Mariama</h3>
+                        <p class="member_text">Applied Computing Major at the UW Bothell. Created Metro Delays and 
+                           Analysis for Cause of Delays for different types of transportation for this Project.</p>
+                     </div>
+                  </div>
+                  <!--<div class="carousel-item">
+                     <div class="creator_left">
+                        <div class="member_img"><img src="images/client-img.png"></div>
+                     </div>
+                     <div class="creator_right">
+                        <h3 class="member_name_text">Brandon</h3>
+                        <p class="member_text">If you are going to use a passage of Lorem Ipsum, you need to be sure
+                           there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                           generators on the Internet tend to repeat predefinedIf you are going to use a passage of
+                           Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+                           text. All the Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+                     </div>
+                  </div> -->
+               </div>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+               </a>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- creator section end -->
+
+   <!-- footer section start -->
+   <div class="footer_section layout_padding margin_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <div class="footer_logo"><img src="images/footer-logo.png"></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <h4 class="footer_taital">NAVIGATION</h4>
+               <div class="footer_menu_main">
+                  <div class="footer_menu_left">
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="routes-overview.html">Route Data</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer_menu_right">
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="delays.html">Delays</a></li>
+                           <!--<li><a href="index.html">Brandon</a></li> -->
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <p class="footer_text">Made for UW Bothell - CSS 496 Capstone Project</p>
+
+            </div>
+
+         </div>
+         <div class="footer_section_2">
+            <div class="row">
+               <div class="col-sm-4 col-md-4 col-lg-3">
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+
+   <!-- update section -->
+   <div class="update_section">
+      <div class="container">
+         <p class="update_text">Last Updated: May 31, 2023</p>
+      </div>
+   </div>
+   <!-- update section end -->
+
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
+
 </html>

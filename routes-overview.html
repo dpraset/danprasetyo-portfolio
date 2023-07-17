@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Routes Overview - King County Metro Data</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+
+   <body>
+<!-- header section start -->
+<div class="header_section">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+               </li>
+
+               <!-- dropdown button for route data to select different data -->
+               <li class="nav-item active">
+                  <div class="nav-link">
+                     <button class="dropbtn">
+                        <a class="nav-link active" href="routes-overview.html"> <!-- Daniel -->
+                           ROUTE DATA
+                           <i class="fa fa-caret-down"></i>
+                        </a>
+                     </button>
+                     <div class="dropdown-content">
+                        <a href="routes/routes.html">Most Popular Routes</a>
+                        <a href="routes/passenger_equity_top.html">Top Route Equity Ratings</a>
+                        <a href="routes/passenger_equity_all.html">All Route Equity Ratings</a>
+                        <a href="routes/passenger_satisfaction.html">Annual Customer Satisfaction</a>
+                        <a href="routes/payment.html">Top Payment Methods</a>
+                        <a href="routes/peak_hours.html">Peak Metro Hours</a>
+                     </div>
+                  </div>
+               </li>
+
+               <!-- dropdown button for route planning -->
+               <li class="nav-item">
+                  <div class="nav-link">
+                     <button class="dropbtn">
+                        <a class="nav-link" href="jesus_route_planning/route_planning.html"> <!-- Jesus -->
+                           Route Planning
+                           <i class="fa fa-caret-down"></i>
+                        </a>
+                     </button>
+                     <div class="dropdown-content">
+                        <a href="KCM/index.html">Stop Map</a>
+                        <a href="jesus_route_planning/route_planning.html">Route Planning</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="delays.html">Delays in Transit</a> <!-- Mariama -->
+               </li>
+               <!-- <li class="nav-item">
+                  <a class="nav-link" href="index.html">COVID and Health</a> <Brandon>
+               </li> -->
+            </ul>
+            <!--
+                  
+               <form class="form-inline my-2 my-lg-0">
+                  <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
+                           src="images/search-icon.png"></a></div>
+                  <button class="live_btn" type="submit">Live</button>
+               </form>
+
+               -->
+         </div>
+   </nav>
+</div>
+<!-- header section end -->
+
+      
+      <!-- overview section start -->
+      <div class="route_section layout_padding">
+         <div style="padding-left: 5%;">
+            <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h1 class="route_taital">King County Routes</h1>
+                        <p class="route_text">Search for specific route data from King County Metro.</p>
+                     </div>
+                  </div>
+
+            <div class="route_section_2">
+                              <!-- search/filter start -->
+               <input type="text" id="myInput2" onkeyup="search()" placeholder="Search or select specific route data...">
+               <!-- list -->
+               <div>
+                  <div class="h_format">
+                     <!-- display All Routes as its own list, not same with number routes -->
+                     <ul id="allroutes">
+                        <li><a href="routes/routes_all.html">All Routes Ridership</a></li>
+                     </ul>
+                     
+
+                     <ul id="myUL">
+                        <!-- specific routes -->
+                          <li><a href="routes/specific_route_data/route_1.html">Route 1</a></li>
+                          <li><a href="routes/specific_route_data/route_2.html">Route 2</a></li>
+                          <li><a href="routes/specific_route_data/route_3.html">Route 3</a></li>
+                          <li><a href="routes/specific_route_data/route_4.html">Route 4</a></li>
+                          <li><a href="routes/specific_route_data/route_5.html">Route 5</a></li>
+                          <li><a href="routes/specific_route_data/route_7.html">Route 7</a></li> <!-- no route 6 -->
+                          <li><a href="routes/specific_route_data/route_8.html">Route 8</a></li>
+                          <li><a href="routes/specific_route_data/route_9.html">Route 9</a></li>
+                          <li><a href="routes/specific_route_data/route_10.html">Route 10</a></li>
+                          <li><a href="routes/specific_route_data/route_11.html">Route 11</a></li>
+                          <li><a href="routes/specific_route_data/route_12.html">Route 12</a></li>
+                          <li><a href="routes/specific_route_data/route_13.html">Route 13</a></li>
+                          <li><a href="routes/specific_route_data/route_14.html">Route 14</a></li>
+                          <li><a href="routes/specific_route_data/route_15.html">Route 15</a></li>
+                          <li><a href="routes/specific_route_data/route_16.html">Route 16</a></li>
+                          <li><a href="routes/specific_route_data/route_17.html">Route 17</a></li>
+                          <li><a href="routes/specific_route_data/route_18.html">Route 18</a></li>
+                          <li><a href="routes/specific_route_data/route_20.html">Route 20</a></li>
+                          <li><a href="routes/specific_route_data/route_21.html">Route 21</a></li>
+                          <li><a href="routes/specific_route_data/route_22.html">Route 22</a></li>
+                          <li><a href="routes/specific_route_data/route_24.html">Route 24</a></li>
+                          <li><a href="routes/specific_route_data/route_26.html">Route 26</a></li> <!-- no route 25. route 26 transit? -->
+                          <li><a href="routes/specific_route_data/route_27.html">Route 27</a></li>
+                          <li><a href="routes/specific_route_data/route_28.html">Route 28</a></li>
+                          <li><a href="routes/specific_route_data/route_29.html">Route 29</a></li>
+                          <li><a href="routes/specific_route_data/route_31.html">Route 31</a></li> <!-- no route 30 -->
+                          <li><a href="routes/specific_route_data/route_32.html">Route 32</a></li>
+                          <li><a href="routes/specific_route_data/route_33.html">Route 33</a></li>
+                          <li><a href="routes/specific_route_data/route_36.html">Route 36</a></li> <!-- no route 34 or 35 -->
+                          <li><a href="routes/specific_route_data/route_40.html">Route 40</a></li> <!-- no route 37, 38, 39 -->
+                          <li><a href="routes/specific_route_data/route_41.html">Route 41</a></li> <!-- only 2021 data available due to light rail -->
+                          <li><a href="routes/specific_route_data/route_43.html">Route 43</a></li> <!-- no route 42 -->
+                          <li><a href="routes/specific_route_data/route_44.html">Route 44</a></li>
+                          <li><a href="routes/specific_route_data/route_45.html">Route 45</a></li>
+                          <li><a href="routes/specific_route_data/route_48.html">Route 48</a></li> <!-- no route 46, 47 -->
+                          <li><a href="routes/specific_route_data/route_49.html">Route 49</a></li>
+                          <li><a href="routes/specific_route_data/route_50.html">Route 50</a></li>
+                          <li><a href="routes/specific_route_data/route_55.html">Route 55</a></li> <!-- no route 51, 52, 53, 54 -->
+                          <li><a href="routes/specific_route_data/route_56.html">Route 56</a></li>
+                          <li><a href="routes/specific_route_data/route_57.html">Route 57</a></li>
+                          <li><a href="routes/specific_route_data/route_60.html">Route 60</a></li>
+                          <li><a href="routes/specific_route_data/route_62.html">Route 62</a></li> <!-- no route 61 -->
+                          <li><a href="routes/specific_route_data/route_64.html">Route 64</a></li> <!-- no route 63 -->
+                          <li><a href="routes/specific_route_data/route_65.html">Route 65</a></li>
+                          <li><a href="routes/specific_route_data/route_67.html">Route 67</a></li> <!-- no route 66 -->
+                          <li><a href="routes/specific_route_data/route_70.html">Route 70</a></li> <!-- no route 68, 69 -->
+                          <li><a href="routes/specific_route_data/route_73.html">Route 73</a></li> <!-- no route 71, 72-->
+                          <li><a href="routes/specific_route_data/route_74.html">Route 74</a></li> <!-- lightrail -->
+                          <li><a href="routes/specific_route_data/route_75.html">Route 75</a></li>
+                          <li><a href="routes/specific_route_data/route_79.html">Route 79</a></li> <!-- 76, 77, 78 -->
+                          <li><a href="routes/specific_route_data/route_101.html">Route 101</a></li> <!---->
+                          <li><a href="routes/specific_route_data/route_102.html">Route 102</a></li>
+                          <li><a href="routes/specific_route_data/route_105.html">Route 105</a></li>
+                          <li><a href="routes/specific_route_data/route_106.html">Route 106</a></li>
+                          <li><a href="routes/specific_route_data/route_107.html">Route 107</a></li>
+                          <li><a href="routes/specific_route_data/route_111.html">Route 111</a></li>
+                          <li><a href="routes/specific_route_data/route_113.html">Route 113</a></li>
+                          <li><a href="routes/specific_route_data/route_114.html">Route 114</a></li>
+                          <li><a href="routes/specific_route_data/route_118.html">Route 118</a></li>
+                          <li><a href="routes/specific_route_data/route_119.html">Route 119</a></li>
+                          <li><a href="routes/specific_route_data/route_120.html">Route 120</a></li> <!-- rapidride h line -->
+                          <li><a href="routes/specific_route_data/route_121.html">Route 121</a></li>
+                          <li><a href="routes/specific_route_data/route_124.html">Route 124</a></li>
+                          <li><a href="routes/specific_route_data/route_125.html">Route 125</a></li>
+                          <li><a href="routes/specific_route_data/route_128.html">Route 128</a></li>
+                          <li><a href="routes/specific_route_data/route_131.html">Route 131</a></li>
+                          <li><a href="routes/specific_route_data/route_132.html">Route 132</a></li>
+                          <li><a href="routes/specific_route_data/route_148.html">Route 148</a></li>
+                          <li><a href="routes/specific_route_data/route_150.html">Route 150</a></li>
+                          <li><a href="routes/specific_route_data/route_153.html">Route 153</a></li>
+                          <li><a href="routes/specific_route_data/route_156.html">Route 156</a></li>
+                          <li><a href="routes/specific_route_data/route_160.html">Route 160</a></li>
+                          <li><a href="routes/specific_route_data/route_161.html">Route 161</a></li>
+                          <li><a href="routes/specific_route_data/route_162.html">Route 162</a></li>
+                          <li><a href="routes/specific_route_data/route_165.html">Route 165</a></li>
+                          <li><a href="routes/specific_route_data/route_167.html">Route 167</a></li>
+                          <li><a href="routes/specific_route_data/route_168.html">Route 168</a></li>
+                          <li><a href="routes/specific_route_data/route_177.html">Route 177</a></li>
+                          <li><a href="routes/specific_route_data/route_181.html">Route 181</a></li>
+                          <li><a href="routes/specific_route_data/route_182.html">Route 182</a></li>
+                          <li><a href="routes/specific_route_data/route_183.html">Route 183</a></li>
+                          <li><a href="routes/specific_route_data/route_184.html">Route 184</a></li>
+                          <li><a href="routes/specific_route_data/route_187.html">Route 187</a></li>
+                          <li><a href="routes/specific_route_data/route_190.html">Route 190</a></li>
+                          <li><a href="routes/specific_route_data/route_193.html">Route 193</a></li>
+                          <li><a href="routes/specific_route_data/route_204.html">Route 204</a></li> <!-- DART Route -->
+                          <li><a href="routes/specific_route_data/route_208.html">Route 208</a></li>
+                          <li><a href="routes/specific_route_data/route_212.html">Route 212</a></li>
+                          <li><a href="routes/specific_route_data/route_214.html">Route 214</a></li>
+                          <li><a href="routes/specific_route_data/route_216.html">Route 216</a></li>
+                          <li><a href="routes/specific_route_data/route_217.html">Route 217</a></li>
+                          <li><a href="routes/specific_route_data/route_218.html">Route 218</a></li>
+                          <li><a href="routes/specific_route_data/route_221.html">Route 221</a></li>
+                          <li><a href="routes/specific_route_data/route_224.html">Route 224</a></li> <!-- DART -->
+                          <li><a href="routes/specific_route_data/route_225.html">Route 225</a></li>
+                          <li><a href="routes/specific_route_data/route_226.html">Route 226</a></li>
+                          <li><a href="routes/specific_route_data/route_230.html">Route 230</a></li>
+                          <li><a href="routes/specific_route_data/route_231.html">Route 231</a></li>
+                          <li><a href="routes/specific_route_data/route_232.html">Route 232</a></li>
+                          <li><a href="routes/specific_route_data/route_237.html">Route 237</a></li>
+                          <li><a href="routes/specific_route_data/route_239.html">Route 239</a></li>
+                          <li><a href="routes/specific_route_data/route_240.html">Route 240</a></li>
+                          <li><a href="routes/specific_route_data/route_241.html">Route 241</a></li>
+                          <li><a href="routes/specific_route_data/route_245.html">Route 245</a></li>
+                          <li><a href="routes/specific_route_data/route_246.html">Route 246</a></li>
+                          <li><a href="routes/specific_route_data/route_249.html">Route 249</a></li>
+                          <li><a href="routes/specific_route_data/route_250.html">Route 250</a></li>
+                          <li><a href="routes/specific_route_data/route_255.html">Route 255</a></li>
+                          <li><a href="routes/specific_route_data/route_257.html">Route 257</a></li>
+                          <li><a href="routes/specific_route_data/route_269.html">Route 268</a></li>
+                          <li><a href="routes/specific_route_data/route_269.html">Route 269</a></li>
+                          <li><a href="routes/specific_route_data/route_271.html">Route 271</a></li>
+                          <li><a href="routes/specific_route_data/route_301.html">Route 301</a></li>
+                          <li><a href="routes/specific_route_data/route_302.html">Route 302</a></li>
+                          <li><a href="routes/specific_route_data/route_303.html">Route 303</a></li>
+                          <li><a href="routes/specific_route_data/route_304.html">Route 304</a></li>
+                          <li><a href="routes/specific_route_data/route_309.html">Route 309</a></li> <!-- discontinued -->
+                          <li><a href="routes/specific_route_data/route_311.html">Route 311</a></li>
+                          <li><a href="routes/specific_route_data/route_320.html">Route 320</a></li>
+                          <li><a href="routes/specific_route_data/route_331.html">Route 331</a></li>
+                          <li><a href="routes/specific_route_data/route_342.html">Route 342</a></li>
+                          <li><a href="routes/specific_route_data/route_345.html">Route 345</a></li>
+                          <li><a href="routes/specific_route_data/route_346.html">Route 346</a></li>
+                          <li><a href="routes/specific_route_data/route_347.html">Route 347</a></li>
+                          <li><a href="routes/specific_route_data/route_348.html">Route 348</a></li>
+                          <li><a href="routes/specific_route_data/route_372.html">Route 372</a></li>  <!-- 372 -->
+                          <li><a href="routes/specific_route_data/route_373.html">Route 373</a></li> <!-- rerouted -->
+                          <li><a href="routes/specific_route_data/route_627.html">Route 627</a></li> <!-- no data found -->
+                          <li><a href="routes/specific_route_data/route_629.html">Route 629</a></li> <!-- SVT Valley Shuttle -->                         
+                          <li><a href="routes/specific_route_data/route_630.html">Route 630</a></li> <!-- DART -->
+                          <li><a href="routes/specific_route_data/route_631.html">Route 631</a></li>
+                          <li><a href="routes/specific_route_data/route_635.html">Route 635</a></li>
+                          <li><a href="routes/specific_route_data/route_773.html">Route 773</a></li>
+                          <li><a href="routes/specific_route_data/route_775.html">Route 775</a></li>
+                          <li><a href="routes/specific_route_data/route_893.html">Route 893</a></li> <!-- no route data -->
+                          <li><a href="routes/specific_route_data/route_895.html">Route 895</a></li> <!-- no route data -->
+                          <li><a href="routes/specific_route_data/route_901.html">Route 901</a></li> 
+                          <li><a href="routes/specific_route_data/route_903.html">Route 903</a></li>
+                          <li><a href="routes/specific_route_data/route_906.html">Route 906</a></li>
+                          <li><a href="routes/specific_route_data/route_907.html">Route 907</a></li>
+                          <li><a href="routes/specific_route_data/route_914.html">Route 914</a></li>
+                          <li><a href="routes/specific_route_data/route_915.html">Route 915</a></li>
+                          <li><a href="routes/specific_route_data/route_917.html">Route 917</a></li>
+                          <li><a href="routes/specific_route_data/route_930.html">Route 930</a></li>
+                          <li><a href="routes/specific_route_data/route_981.html">Route 981</a></li>
+                          <li><a href="routes/specific_route_data/route_986.html">Route 986</a></li>
+                          <li><a href="routes/specific_route_data/route_987.html">Route 987</a></li>
+                          <li><a href="routes/specific_route_data/route_989.html">Route 989</a></li>
+                          <li><a href="routes/specific_route_data/route_994.html">Route 994</a></li>
+                          <li><a href="routes/specific_route_data/a_line.html">A Line</a></li>      <!-- Lines -->
+                          <li><a href="routes/specific_route_data/b_line.html">B Line</a></li>
+                          <li><a href="routes/specific_route_data/c_line.html">C Line</a></li>
+                          <li><a href="routes/specific_route_data/d_line.html">D Line</a></li>
+                          <li><a href="routes/specific_route_data/e_line.html">E Line</a></li>
+                          <li><a href="routes/specific_route_data/f_line.html">F Line</a></li>
+                     </ul>
+                  </div>
+                     <!--
+                  <div class="h_format">
+                     <ul id="myUL2">
+                        <li><a href="routes/routes.html">Popular Routes</a></li>
+                        <li><a href="routes/passenger_equity_top.html">Top Route Equity Ratings</a></li>
+                        <li><a href="routes/passenger_satisfaction.html">Annual Customer Satisfaction</a></li>
+                     </ul>
+                  </div> -->
+               </div>
+               <!-- list end  -->
+            </div>
+         <!-- search/filter end -->
+            </div>
+         </div>
+      </div>
+      <!-- overview section end -->
+      
+         <!-- footer section start -->
+   <div class="footer_section layout_padding margin_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <div class="footer_logo"><img src="images/footer-logo.png"></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <h4 class="footer_taital">NAVIGATION</h4>
+               <div class="footer_menu_main">
+                  <div class="footer_menu_left">
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="routes-overview.html">Route Data</a></li>
+                           <li><a href="KCM/index.html">Planning</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer_menu_right">
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="delays.html">Delays</a></li>
+                           <!--<li><a href="index.html">Brandon</a></li> -->
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <p class="footer_text">Made for UW Bothell - CSS 496 Capstone Project</p>
+
+            </div>
+
+         </div>
+         <div class="footer_section_2">
+            <div class="row">
+               <div class="col-sm-4 col-md-4 col-lg-3">
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+
+   <!-- update section -->
+   <div class="update_section">
+      <div class="container">
+         <p class="update_text">Last Updated: May 31, 2023</p>
+      </div>
+   </div>
+   <!-- update section end -->
+
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!--filter js-->
+      <script src="js/filter.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+
+      <script src="https://public.tableau.com/app/profile/daniel.prasetyo/viz/KingCounty-TopRouteRidership/TopRouteWeekdayRidershipSpring2021-2022?publish=yes/javascripts/api/tableau-2.min.js"></script>   
+   </body>
+</html>
+

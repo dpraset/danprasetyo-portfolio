@@ -357,6 +357,50 @@ button.live_btn {
 
 /* header section end */
 
+/* image gallery start */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(212, 212, 212);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* gallery end */
+
 
 /* banner section start */
 
@@ -559,7 +603,14 @@ button.live_btn {
 .about_section {
     width: 100%;
     float: left;
-    background-color: #120a78;
+    background-color: #464553;
+    padding-bottom: 90px;
+}
+
+.about_section_gal {
+    width: 100%;
+    float: left;
+    background-color: #a8a6c1;
     padding-bottom: 90px;
 }
 

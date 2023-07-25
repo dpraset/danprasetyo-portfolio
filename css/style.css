@@ -232,11 +232,11 @@ button {
 .header_section {
     width: 100%;
     overflow: hidden;
-    padding:6%;
+    padding:5%;
     float: left;
     position: relative;
     z-index: 1;
-    background-color: #f9f9f9; /*slightly off white to tell header */
+    background-color: #f7f7f7; /*slightly off white to tell header */
 }
 
 .navbar-brand {
@@ -393,7 +393,9 @@ div.desc {
 }
 
 .gal_logo {
-    border-radius: 50%;
+    border-radius: 5%;
+    width:auto;
+    height:7em;
   }
 
 .responsive {
